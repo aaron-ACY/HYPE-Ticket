@@ -4,13 +4,12 @@
 FROM maven:3.9.9-eclipse-temurin-21-alpine AS builder
 WORKDIR /app
 
-# Cache dependency layer để tăng tốc độ build CI/CD
+# Copy pom.xml và source code
 COPY pom.xml .
-RUN mvn dependency:go-offline -B
-
-# Copy mã nguồn và đóng gói
 COPY src ./src
-RUN mvn clean package -DskipTests
+
+# Đóng gói file jar
+RUN mvn clean package -DskipTests -B
 
 # ==========================================
 # STAGE 2: Runtime Image gọn nhẹ

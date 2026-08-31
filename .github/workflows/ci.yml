@@ -75,7 +75,7 @@ jobs:
           retention-days: 7
 
   # ========================================================
-  # JOB 2: Frontend Test & Build (Node.js 20 + Vite)
+  # JOB 2: Frontend Test & Build (Node.js 22 + Vite)
   # ========================================================
   frontend-build:
     name: Frontend Lint & Build
@@ -85,10 +85,10 @@ jobs:
       - name: Checkout Source Code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js 20
+      - name: Set up Node.js 22
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
           cache-dependency-path: ./hype-fe/package-lock.json
 
@@ -127,7 +127,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build Backend Docker Image
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: ./hype-api
           file: ./hype-api/Dockerfile
@@ -137,7 +137,7 @@ jobs:
           cache-to: type=gha,mode=max,scope=hype-api
 
       - name: Build Frontend Docker Image
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: ./hype-fe
           file: ./hype-fe/Dockerfile
