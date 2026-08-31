@@ -1,0 +1,108 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main", "master", "develop" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  # ========================================================
+  # JOB 1: Backend Test (Java 21 + Maven + Redis Container)
+  # ========================================================
+  backend-test:
+    name: Backend Test & Verification
+    runs-on: ubuntu-latest
+
+    services:
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21 (Eclipse Temurin)
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Run Backend Tests
+        working-directory: ./hype-api
+        env:
+          REDIS_HOST: localhost
+          REDIS_PORT: 6379
+          SPRING_DATASOURCE_URL: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+          SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.h2.Driver
+        run: |
+          mvn clean test -B
+
+  # ========================================================
+  # JOB 2: Frontend Test & Build (Node.js 20 + Vite)
+  # ========================================================
+  frontend-build:
+    name: Frontend Lint & Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: ./hype-fe/package-lock.json
+
+      - name: Install Dependencies
+        working-directory: ./hype-fe
+        run: npm ci
+
+      - name: Run Linting (Oxlint)
+        working-directory: ./hype-fe
+        run: npm run lint || true
+
+      - name: Build Frontend with Vite
+        working-directory: ./hype-fe
+        run: npm run build
+
+  # ========================================================
+  # JOB 3: Docker Build (Docker Images)
+  # ========================================================
+  docker-build:
+    name: Build Docker Images
+    needs: [backend-test, frontend-build]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Backend Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./hype-api
+          file: ./hype-api/Dockerfile
+          push: false
+          tags: hype-api:latest
+
+      - name: Build Frontend Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./hype-fe
+          file: ./hype-fe/Dockerfile
+          push: false
+          tags: hype-fe:latest

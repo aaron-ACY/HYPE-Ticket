@@ -1,0 +1,362 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "H HYPETICKET" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e8]: H
+        - generic [ref=e9]: HYPETICKET
+      - navigation [ref=e10]:
+        - link "Khám phá" [ref=e11] [cursor=pointer]:
+          - /url: /events
+        - link "Sự kiện" [ref=e15] [cursor=pointer]:
+          - /url: /events
+        - link "Thể loại" [ref=e18] [cursor=pointer]:
+          - /url: /events
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - textbox "Tìm kiếm sự kiện, nghệ sĩ..." [ref=e23]
+          - button [ref=e24]
+        - button "Nguyễn Hữu Đan Nguyễn Hữu Đan" [ref=e29]:
+          - img "Nguyễn Hữu Đan" [ref=e30]
+          - generic [ref=e31]: Nguyễn Hữu Đan
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e35]:
+        - img "Indie Music Festival 2026 - Thanh Âm Tự Do" [ref=e37]
+        - generic [ref=e42]:
+          - generic [ref=e43]: Sự kiện tiêu điểm
+          - heading "Indie Music Festival 2026 - Thanh Âm Tự Do" [level=1] [ref=e46]
+          - paragraph [ref=e47]: Đại hội âm nhạc Indie lớn nhất năm 2026 quy tụ hơn 20 nghệ sĩ và ban nhạc đình đám nhất giới Indie Việt Nam. Trải nghiệm không gian âm nhạc ngoài trời sôi động, kết hợp với các gian hàng nghệ thuật độc đáo và ẩm thực đa dạng.
+          - generic [ref=e48]:
+            - generic [ref=e49]: 12/09/2026 • 15:00 - 23:00
+            - generic [ref=e52]: Sân Vận Động Quân Khu 7 (TP. Hồ Chí Minh)
+          - generic [ref=e56]:
+            - link [ref=e57] [cursor=pointer]:
+              - /url: /events/indie-music-festival-2026
+              - button [ref=e58]
+            - link [ref=e62] [cursor=pointer]:
+              - /url: /events/indie-music-festival-2026
+              - button "Xem chi tiết" [ref=e63]
+            - generic [ref=e64]:
+              - generic [ref=e65]: Vé từ
+              - generic [ref=e66]: 499.000 ₫
+        - generic [ref=e67]:
+          - button [ref=e68]
+          - button [ref=e71]
+        - generic [ref=e74]:
+          - button [ref=e75]
+          - button [ref=e76]
+          - button [ref=e77]
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]: Trải nghiệm tương tác
+            - heading "Sở Hữu Tấm Vé Holographic 3D Độc Bản" [level=2] [ref=e86]
+            - paragraph [ref=e87]: Trải nghiệm đặt vé công nghệ thế hệ mới. Mua vé hạng VIP để nhận ngay tấm vé ảo 3D tương tác Hologram lưu trữ trong ví. Di chuột (hoặc chạm tay) lên thẻ bên cạnh để xoay và cảm nhận phản chiếu ánh sáng 3D!
+          - generic [ref=e91] [cursor=pointer]:
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - generic [ref=e94]: H
+                - generic [ref=e95]: HYPETICKET
+              - generic [ref=e96]: VIP Pass
+            - generic [ref=e101]:
+              - paragraph [ref=e102]: Độc quyền GenZ
+              - heading "SUPER ULTRA HYPE PASS" [level=2] [ref=e103]
+              - paragraph [ref=e104]: "[ 3D HOLO ACCESS TICKET ]"
+            - generic [ref=e106]:
+              - paragraph [ref=e107]: Chủ thẻ
+              - paragraph [ref=e108]: HỮU ĐAN MOCK GUEST
+        - generic [ref=e119]:
+          - generic [ref=e121]:
+            - heading "Khám Phá Theo Thể Loại" [level=2] [ref=e122]
+            - paragraph [ref=e126]: Tìm kiếm sự kiện phù hợp với gu của bạn
+          - generic [ref=e127]:
+            - link [ref=e128] [cursor=pointer]:
+              - /url: /events?category=concert
+              - img "Concert / Ca Nhạc" [ref=e129]
+              - paragraph [ref=e136]: Concert
+            - link [ref=e137] [cursor=pointer]:
+              - /url: /events?category=music-festival
+              - img "Lễ Hội Âm Nhạc" [ref=e138]
+              - paragraph [ref=e144]: Lễ Hội Âm Nhạc
+            - link [ref=e145] [cursor=pointer]:
+              - /url: /events?category=theater
+              - img "Kịch Nghệ / Sân Khấu" [ref=e146]
+              - paragraph [ref=e154]: Kịch Nghệ
+            - link [ref=e155] [cursor=pointer]:
+              - /url: /events?category=comedy
+              - img "Hài Kịch" [ref=e156]
+              - paragraph [ref=e162]: Hài Kịch
+            - link [ref=e163] [cursor=pointer]:
+              - /url: /events?category=sports
+              - img "Thể Thao" [ref=e164]
+              - paragraph [ref=e173]: Thể Thao
+            - link [ref=e174] [cursor=pointer]:
+              - /url: /events?category=workshop
+              - img "Hội Thảo / Học Tập" [ref=e175]
+              - paragraph [ref=e180]: Hội Thảo
+            - link [ref=e181] [cursor=pointer]:
+              - /url: /events?category=exhibition
+              - img "Triển Lãm / Nghệ Thuật" [ref=e182]
+              - paragraph [ref=e191]: Triển Lãm
+            - link [ref=e192] [cursor=pointer]:
+              - /url: /events?category=nightlife
+              - img "Nightlife / Tiệc Tùng" [ref=e193]
+              - paragraph [ref=e200]: Nightlife
+        - generic [ref=e201]:
+          - generic [ref=e202]:
+            - generic [ref=e203]:
+              - heading "Sự Kiện Nổi Bật" [level=2] [ref=e204]
+              - paragraph [ref=e207]: Các show diễn HOT được quan tâm nhiều nhất
+            - link "Xem tất cả" [ref=e208] [cursor=pointer]:
+              - /url: /events
+          - generic [ref=e211]:
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - img "Indie Music Festival 2026 - Thanh Âm Tự Do" [ref=e214]
+                - generic [ref=e215]: Hot
+              - generic [ref=e217]:
+                - generic [ref=e218]: music festival
+                - heading [level=3] [ref=e219]:
+                  - link "Indie Music Festival 2026 - Thanh Âm Tự Do" [ref=e220] [cursor=pointer]:
+                    - /url: /events/indie-music-festival-2026
+                - generic [ref=e221]:
+                  - generic [ref=e222]: 12/09/2026 • 15:00
+                  - generic [ref=e226]: Sân Vận Động Quân Khu 7
+                - generic [ref=e231]:
+                  - generic [ref=e232]:
+                    - paragraph [ref=e233]: Từ
+                    - paragraph [ref=e234]: 499.000 ₫
+                  - link [ref=e235] [cursor=pointer]:
+                    - /url: /events/indie-music-festival-2026
+                    - button "Mua vé" [ref=e236]
+            - generic [ref=e237]:
+              - generic [ref=e238]:
+                - img "Rap Concert 'The Chosen One' - Live In Hanoi" [ref=e239]
+                - generic [ref=e240]: Hot
+              - generic [ref=e242]:
+                - generic [ref=e243]: concert
+                - heading [level=3] [ref=e244]:
+                  - link "Rap Concert 'The Chosen One' - Live In Hanoi" [ref=e245] [cursor=pointer]:
+                    - /url: /events/rap-concert-the-chosen-one
+                - generic [ref=e246]:
+                  - generic [ref=e247]: 25/10/2026 • 19:30
+                  - generic [ref=e251]: Sân Vận Động Quốc Gia Mỹ Đình
+                - generic [ref=e256]:
+                  - generic [ref=e257]:
+                    - paragraph [ref=e258]: Từ
+                    - paragraph [ref=e259]: 650.000 ₫
+                  - link [ref=e260] [cursor=pointer]:
+                    - /url: /events/rap-concert-the-chosen-one
+                    - button "Mua vé" [ref=e261]
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - img "Liveshow Hài Kịch 'Cười Xuyên Biên Giới' - Hội Tụ Danh Hài" [ref=e264]
+                - generic [ref=e265]: Hot
+              - generic [ref=e267]:
+                - generic [ref=e268]: comedy
+                - heading [level=3] [ref=e269]:
+                  - link "Liveshow Hài Kịch 'Cười Xuyên Biên Giới' - Hội Tụ Danh Hài" [ref=e270] [cursor=pointer]:
+                    - /url: /events/hai-kich-cuoi-xuyen-bien-gioi
+                - generic [ref=e271]:
+                  - generic [ref=e272]: 18/09/2026 • 20:00
+                  - generic [ref=e276]: Cung Văn Hóa Lao Động Hữu Nghị Việt Xô
+                - generic [ref=e281]:
+                  - generic [ref=e282]:
+                    - paragraph [ref=e283]: Từ
+                    - paragraph [ref=e284]: 400.000 ₫
+                  - link [ref=e285] [cursor=pointer]:
+                    - /url: /events/hai-kich-cuoi-xuyen-bien-gioi
+                    - button "Mua vé" [ref=e286]
+        - generic [ref=e287]:
+          - generic [ref=e288]:
+            - generic [ref=e289]:
+              - heading "Sắp Diễn Ra" [level=2] [ref=e290]
+              - paragraph [ref=e293]: Lên lịch tham gia các sự kiện sắp đổ bộ
+            - link "Tất cả sự kiện" [ref=e294] [cursor=pointer]:
+              - /url: /events
+          - generic [ref=e297]:
+            - generic [ref=e298]:
+              - generic [ref=e299]:
+                - img "Indie Music Festival 2026 - Thanh Âm Tự Do" [ref=e300]
+                - generic [ref=e301]: Hot
+              - generic [ref=e303]:
+                - generic [ref=e304]: music festival
+                - heading [level=3] [ref=e305]:
+                  - link "Indie Music Festival 2026 - Thanh Âm Tự Do" [ref=e306] [cursor=pointer]:
+                    - /url: /events/indie-music-festival-2026
+                - generic [ref=e307]:
+                  - generic [ref=e308]: 12/09/2026 • 15:00
+                  - generic [ref=e312]: Sân Vận Động Quân Khu 7
+                - generic [ref=e317]:
+                  - generic [ref=e318]:
+                    - paragraph [ref=e319]: Từ
+                    - paragraph [ref=e320]: 499.000 ₫
+                  - link [ref=e321] [cursor=pointer]:
+                    - /url: /events/indie-music-festival-2026
+                    - button "Mua vé" [ref=e322]
+            - generic [ref=e323]:
+              - generic [ref=e324]:
+                - img "Rap Concert 'The Chosen One' - Live In Hanoi" [ref=e325]
+                - generic [ref=e326]: Hot
+              - generic [ref=e328]:
+                - generic [ref=e329]: concert
+                - heading [level=3] [ref=e330]:
+                  - link "Rap Concert 'The Chosen One' - Live In Hanoi" [ref=e331] [cursor=pointer]:
+                    - /url: /events/rap-concert-the-chosen-one
+                - generic [ref=e332]:
+                  - generic [ref=e333]: 25/10/2026 • 19:30
+                  - generic [ref=e337]: Sân Vận Động Quốc Gia Mỹ Đình
+                - generic [ref=e342]:
+                  - generic [ref=e343]:
+                    - paragraph [ref=e344]: Từ
+                    - paragraph [ref=e345]: 650.000 ₫
+                  - link [ref=e346] [cursor=pointer]:
+                    - /url: /events/rap-concert-the-chosen-one
+                    - button "Mua vé" [ref=e347]
+            - generic [ref=e348]:
+              - img "Kịch Nói Nghệ Thuật 'Sông Thần' - Đêm Huyền Thoại" [ref=e350]
+              - generic [ref=e351]:
+                - generic [ref=e352]: theater
+                - heading [level=3] [ref=e353]:
+                  - link "Kịch Nói Nghệ Thuật 'Sông Thần' - Đêm Huyền Thoại" [ref=e354] [cursor=pointer]:
+                    - /url: /events/kich-noi-nghe-thuat-song-than
+                - generic [ref=e355]:
+                  - generic [ref=e356]: 05/09/2026 • 20:00
+                  - generic [ref=e360]: Nhà Hát Bến Thành
+                - generic [ref=e365]:
+                  - generic [ref=e366]:
+                    - paragraph [ref=e367]: Từ
+                    - paragraph [ref=e368]: 350.000 ₫
+                  - link [ref=e369] [cursor=pointer]:
+                    - /url: /events/kich-noi-nghe-thuat-song-than
+                    - button "Mua vé" [ref=e370]
+            - generic [ref=e371]:
+              - generic [ref=e372]:
+                - img "Liveshow Hài Kịch 'Cười Xuyên Biên Giới' - Hội Tụ Danh Hài" [ref=e373]
+                - generic [ref=e374]: Hot
+              - generic [ref=e376]:
+                - generic [ref=e377]: comedy
+                - heading [level=3] [ref=e378]:
+                  - link "Liveshow Hài Kịch 'Cười Xuyên Biên Giới' - Hội Tụ Danh Hài" [ref=e379] [cursor=pointer]:
+                    - /url: /events/hai-kich-cuoi-xuyen-bien-gioi
+                - generic [ref=e380]:
+                  - generic [ref=e381]: 18/09/2026 • 20:00
+                  - generic [ref=e385]: Cung Văn Hóa Lao Động Hữu Nghị Việt Xô
+                - generic [ref=e390]:
+                  - generic [ref=e391]:
+                    - paragraph [ref=e392]: Từ
+                    - paragraph [ref=e393]: 400.000 ₫
+                  - link [ref=e394] [cursor=pointer]:
+                    - /url: /events/hai-kich-cuoi-xuyen-bien-gioi
+                    - button "Mua vé" [ref=e395]
+            - generic [ref=e396]:
+              - generic [ref=e397]:
+                - img "Chung Kết Giải Bóng Rổ Chuyên Nghiệp VBA 2026" [ref=e398]
+                - generic [ref=e399]: Giá tốt
+              - generic [ref=e401]:
+                - generic [ref=e402]: sports
+                - heading [level=3] [ref=e403]:
+                  - link "Chung Kết Giải Bóng Rổ Chuyên Nghiệp VBA 2026" [ref=e404] [cursor=pointer]:
+                    - /url: /events/vba-grand-finals-2026
+                - generic [ref=e405]:
+                  - generic [ref=e406]: 04/10/2026 • 18:00
+                  - generic [ref=e410]: Nhà Thi Đấu Thể Dục Thể Thao Phú Thọ
+                - generic [ref=e415]:
+                  - generic [ref=e416]:
+                    - paragraph [ref=e417]: Từ
+                    - paragraph [ref=e418]: 250.000 ₫
+                  - link [ref=e419] [cursor=pointer]:
+                    - /url: /events/vba-grand-finals-2026
+                    - button "Mua vé" [ref=e420]
+            - generic [ref=e421]:
+              - img "Creative Art Workshop 'Vẽ & Cảm Nhận Nhịp Sống'" [ref=e423]
+              - generic [ref=e424]:
+                - generic [ref=e425]: workshop
+                - heading [level=3] [ref=e426]:
+                  - link "Creative Art Workshop 'Vẽ & Cảm Nhận Nhịp Sống'" [ref=e427] [cursor=pointer]:
+                    - /url: /events/art-workshop-draw-and-feel
+                - generic [ref=e428]:
+                  - generic [ref=e429]: 30/08/2026 • 09:00
+                  - generic [ref=e433]: Trung Tâm Hội Chợ & Triển Lãm Sài Gòn (SECC)
+                - generic [ref=e438]:
+                  - generic [ref=e439]:
+                    - paragraph [ref=e440]: Từ
+                    - paragraph [ref=e441]: 300.000 ₫
+                  - link [ref=e442] [cursor=pointer]:
+                    - /url: /events/art-workshop-draw-and-feel
+                    - button "Mua vé" [ref=e443]
+            - generic [ref=e444]:
+              - img "Đại Tiệc DJ Night 'Vũ Trụ Bay 2026' - EDM Extreme" [ref=e446]
+              - generic [ref=e447]:
+                - generic [ref=e448]: nightlife
+                - heading [level=3] [ref=e449]:
+                  - link "Đại Tiệc DJ Night 'Vũ Trụ Bay 2026' - EDM Extreme" [ref=e450] [cursor=pointer]:
+                    - /url: /events/dj-night-vu-tru-bay
+                - generic [ref=e451]:
+                  - generic [ref=e452]: 20/09/2026 • 21:00
+                  - generic [ref=e456]: Trung Tâm Hội Chợ & Triển Lãm Sài Gòn (SECC)
+                - generic [ref=e461]:
+                  - generic [ref=e462]:
+                    - paragraph [ref=e463]: Từ
+                    - paragraph [ref=e464]: 350.000 ₫
+                  - link [ref=e465] [cursor=pointer]:
+                    - /url: /events/dj-night-vu-tru-bay
+                    - button "Mua vé" [ref=e466]
+  - contentinfo [ref=e467]:
+    - generic [ref=e468]:
+      - generic [ref=e469]:
+        - link "H HYPETICKET" [ref=e470] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e471]: H
+          - generic [ref=e472]: HYPETICKET
+        - paragraph [ref=e473]: Hype Ticket là nền tảng phân phối vé sự kiện giải trí hàng đầu Việt Nam, kết nối trực tiếp nhà tổ chức với người hâm mộ qua giải pháp công nghệ hiện đại.
+        - generic [ref=e474]:
+          - link "Facebook" [ref=e475] [cursor=pointer]:
+            - /url: "#"
+          - link "Instagram" [ref=e478] [cursor=pointer]:
+            - /url: "#"
+          - link "Youtube" [ref=e482] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e485]:
+        - heading "Danh Mục Sự Kiện" [level=4] [ref=e486]
+        - list [ref=e487]:
+          - listitem [ref=e488]:
+            - link "Ca nhạc & Concerts" [ref=e489] [cursor=pointer]:
+              - /url: /events
+          - listitem [ref=e490]:
+            - link "Lễ hội âm nhạc EDM" [ref=e491] [cursor=pointer]:
+              - /url: /events
+          - listitem [ref=e492]:
+            - link "Kịch nói & Nghệ thuật sân khấu" [ref=e493] [cursor=pointer]:
+              - /url: /events
+          - listitem [ref=e494]:
+            - link "Hội thảo & Workshop sáng tạo" [ref=e495] [cursor=pointer]:
+              - /url: /events
+          - listitem [ref=e496]:
+            - link "Thi đấu Thể thao chuyên nghiệp" [ref=e497] [cursor=pointer]:
+              - /url: /events
+      - generic [ref=e498]:
+        - heading "Thông Tin Liên Hệ" [level=4] [ref=e499]
+        - list [ref=e500]:
+          - listitem [ref=e501]:
+            - generic [ref=e505]: Tòa nhà Hype Building, 120 Nguyễn Thị Minh Khai, Phường Võ Thị Sáu, Quận 3, TP. Hồ Chí Minh
+          - listitem [ref=e506]:
+            - generic [ref=e509]: "Hotline: 1900 1234 (9:00 - 18:00)"
+          - listitem [ref=e510]:
+            - generic [ref=e514]: "Email: support@hypeticket.vn"
+      - generic [ref=e515]:
+        - heading "Cập Nhật Sự Kiện" [level=4] [ref=e516]
+        - paragraph [ref=e517]: Đăng ký nhận thông tin về các sự kiện hot nhất, mã giảm giá đặc quyền và cơ hội mua vé sớm nhất.
+        - generic [ref=e518]:
+          - textbox "Email của bạn..." [ref=e519]
+          - button [ref=e520]
+    - generic [ref=e524]:
+      - paragraph [ref=e525]: © 2026 Hype Ticket. All rights reserved. Bản quyền thuộc về Công ty Công nghệ Hype Việt Nam.
+      - generic [ref=e526]:
+        - link "Điều khoản dịch vụ" [ref=e527] [cursor=pointer]:
+          - /url: "#"
+        - link "Chính sách bảo mật" [ref=e528] [cursor=pointer]:
+          - /url: "#"
+        - link "Chính sách hoàn tiền" [ref=e529] [cursor=pointer]:
+          - /url: "#"
