@@ -6,6 +6,13 @@ on:
   pull_request:
     branches: [ "main", "master" ]
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   # ========================================================
   # JOB 1: Backend Test (Java 21 + Maven + Redis Container)
@@ -46,6 +53,14 @@ jobs:
         run: |
           mvn clean test -B
 
+      - name: Upload Backend Test Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-test-reports
+          path: hype-api/target/surefire-reports/
+          retention-days: 7
+
   # ========================================================
   # JOB 2: Frontend Test & Build (Node.js 20 + Vite)
   # ========================================================
@@ -70,11 +85,18 @@ jobs:
 
       - name: Run Linting (Oxlint)
         working-directory: ./hype-fe
-        run: npm run lint || true
+        run: npm run lint
 
       - name: Build Frontend with Vite
         working-directory: ./hype-fe
         run: npm run build
+
+      - name: Upload Frontend Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-dist
+          path: hype-fe/dist/
+          retention-days: 7
 
   # ========================================================
   # JOB 3: Docker Build (Docker Images)
@@ -98,6 +120,8 @@ jobs:
           file: ./hype-api/Dockerfile
           push: false
           tags: hype-api:latest
+          cache-from: type=gha,scope=hype-api
+          cache-to: type=gha,mode=max,scope=hype-api
 
       - name: Build Frontend Docker Image
         uses: docker/build-push-action@v5
@@ -106,3 +130,5 @@ jobs:
           file: ./hype-fe/Dockerfile
           push: false
           tags: hype-fe:latest
+          cache-from: type=gha,scope=hype-fe
+          cache-to: type=gha,mode=max,scope=hype-fe
