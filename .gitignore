@@ -41,3 +41,6 @@ skills-lock.json
 
 # Docker data volume
 docker-data/
+
+# Local developer notes
+WORKFLOW.md
